@@ -13,7 +13,11 @@ public class RobotMatch{
     public RobotMatch(){
     }
 
+    public void setData(int teamNumber, int scoredPoints,  boolean red, String comment){
+
+    }
+
     public String toString(){
-        return "{ \nteamNumber: " + teamNumber + ",\nscoredPoints: " + scoredPoints + ",\nred: " + red + ",\ncomment: " + comment + "\n}";
+        return "{ \nteamNumber: " + teamNumber + ",\nscoredPoints: " + scoredPoints + ",\nred: " + red + ",\ncomment: " + comment + ",\n}";
     }
 }

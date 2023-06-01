@@ -14,9 +14,12 @@ public class Match {
     public Match(){
 
     }
-
     public Match(ArrayList<RobotMatch> robots){
         this.robots = robots;
+    }
+
+    public void setData(int matchNum, int redScore, int blueScore, int redFouls, int blueFouls, int redRankingPoints, int blueRankingPoints, double matchPredictionPercentRed, double redScorePrediction, double blueScorePrediction, boolean predictedWinnerRed){
+
     }
 
     public ArrayList<RobotMatch> getRobots(){
@@ -24,6 +27,6 @@ public class Match {
     }
 
     public String toString(){
-        return "{ \nmatchNum: " + matchNum + ",\nredScore: " + redScore + ",\nblueScore: " + blueScore + ",\nredFouls: " + redFouls + ",\nblueFouls: " + blueFouls + ",\nredRankingPoints: " + redRankingPoints + ",\nblueRankingPoints: " + blueRankingPoints + ",\ncomment: " + comment + "\n";
+        return "{ \nmatchNum: " + matchNum + ",\nredScore: " + redScore + ",\nblueScore: " + blueScore + ",\nredFouls: " + redFouls + ",\nblueFouls: " + blueFouls + ",\nredRankingPoints: " + redRankingPoints + ",\nblueRankingPoints: " + blueRankingPoints + ",\ncomment: " + comment + ",\n";
     }
 }

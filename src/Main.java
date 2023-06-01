@@ -24,7 +24,8 @@ public class Main extends JFrame {
         ArrayList<Match> matchList = new ArrayList<Match>();
         matchList.add(new Match(robotList));
 
-        SaveLoad.save(new Event[] {new Event(matchList)});
+
+        SaveLoad.load(SaveLoad.save(new Event[] {new Event(matchList)}));
 
         pack();
         setPreferredSize(new Dimension(500, 500));
